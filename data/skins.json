@@ -1,568 +1,1508 @@
 [
-  { "id": 1, "name": "Aatrox_eclypse.jpg", "champion": "Aatrox", "mode": 1 },
-  { "id": 2, "name": "Akali_cyber.jpg", "champion": "Akali", "mode": 1 },
-  { "id": 3, "name": "Akali_foot.jpg", "champion": "Akali", "mode": 1 },
-  { "id": 4, "name": "Amumu_cadeau.jpg", "champion": "Amumu", "mode": 1 },
-  { "id": 5, "name": "Amumu_porcelaine.jpg", "champion": "Amumu", "mode": 1 },
-  { "id": 6, "name": "Anivia_sorciere.jpg", "champion": "Anivia", "mode": 1 },
-  { "id": 7, "name": "Aphelios_edg.jpg", "champion": "Aphelios", "mode": 1 },
-  { "id": 8, "name": "Aphelios_fleur.jpg", "champion": "Aphelios", "mode": 1 },
   {
-    "id": 9,
-    "name": "Aphelios_lunaire.jpg",
+    "id": 1,
+    "name": "Aatrox_eclypse",
+    "champion": "Aatrox",
+    "mode": 1
+  },
+  {
+    "id": 2,
+    "name": "Akali_cyber",
+    "champion": "Akali",
+    "mode": 1
+  },
+  {
+    "id": 3,
+    "name": "Akali_foot",
+    "champion": "Akali",
+    "mode": 1
+  },
+  {
+    "id": 4,
+    "name": "Amumu_cadeau",
+    "champion": "Amumu",
+    "mode": 1
+  },
+  {
+    "id": 5,
+    "name": "Amumu_porcelaine",
+    "champion": "Amumu",
+    "mode": 1
+  },
+  {
+    "id": 6,
+    "name": "Anivia_sorciere",
+    "champion": "Anivia",
+    "mode": 1
+  },
+  {
+    "id": 7,
+    "name": "Aphelios_edg",
     "champion": "Aphelios",
     "mode": 1
   },
-  { "id": 10, "name": "Ashe_cosmique.jpg", "champion": "Ashe", "mode": 1 },
-  { "id": 11, "name": "Ashe_fee.jpg", "champion": "Ashe", "mode": 1 },
-  { "id": 12, "name": "Ashe_ocean.jpg", "champion": "Ashe", "mode": 1 },
-  { "id": 13, "name": "Bard_cafe.jpg", "champion": "Bard", "mode": 1 },
+  {
+    "id": 8,
+    "name": "Aphelios_fleur",
+    "champion": "Aphelios",
+    "mode": 1
+  },
+  {
+    "id": 9,
+    "name": "Aphelios_lunaire",
+    "champion": "Aphelios",
+    "mode": 1
+  },
+  {
+    "id": 10,
+    "name": "Ashe_cosmique",
+    "champion": "Ashe",
+    "mode": 1
+  },
+  {
+    "id": 11,
+    "name": "Ashe_fee",
+    "champion": "Ashe",
+    "mode": 1
+  },
+  {
+    "id": 12,
+    "name": "Ashe_ocean",
+    "champion": "Ashe",
+    "mode": 1
+  },
+  {
+    "id": 13,
+    "name": "Bard_cafe",
+    "champion": "Bard",
+    "mode": 1
+  },
   {
     "id": 14,
-    "name": "Blitzcrank_astro.jpg",
+    "name": "Blitzcrank_astro",
     "champion": "Blitzcrank",
     "mode": 1
   },
-  { "id": 15, "name": "Brand_pure.jpg", "champion": "Brand", "mode": 1 },
-  { "id": 16, "name": "Brand_seducteur.jpg", "champion": "Brand", "mode": 1 },
-  { "id": 17, "name": "Caitlyn_lunaire.jpg", "champion": "Caitlyn", "mode": 1 },
-  { "id": 18, "name": "Caitlyn_neige.jpg", "champion": "Caitlyn", "mode": 1 },
-  { "id": 19, "name": "Camille_arcanes.jpg", "champion": "Camille", "mode": 1 },
+  {
+    "id": 15,
+    "name": "Brand_pure",
+    "champion": "Brand",
+    "mode": 1
+  },
+  {
+    "id": 16,
+    "name": "Brand_seducteur",
+    "champion": "Brand",
+    "mode": 1
+  },
+  {
+    "id": 17,
+    "name": "Caitlyn_lunaire",
+    "champion": "Caitlyn",
+    "mode": 1
+  },
+  {
+    "id": 18,
+    "name": "Caitlyn_neige",
+    "champion": "Caitlyn",
+    "mode": 1
+  },
+  {
+    "id": 19,
+    "name": "Camille_arcanes",
+    "champion": "Camille",
+    "mode": 1
+  },
   {
     "id": 20,
-    "name": "Camille_assemblee.jpg",
+    "name": "Camille_assemblee",
     "champion": "Camille",
     "mode": 1
   },
   {
     "id": 21,
-    "name": "Cassiopeia_assemblee.jpg",
+    "name": "Cassiopeia_assemblee",
     "champion": "Cassiopeia",
     "mode": 1
   },
   {
     "id": 22,
-    "name": "Cassiopeia_fleur.jpg",
+    "name": "Cassiopeia_fleur",
     "champion": "Cassiopeia",
     "mode": 1
   },
   {
     "id": 23,
-    "name": "Cassiopeia_sorciere.jpg",
+    "name": "Cassiopeia_sorciere",
     "champion": "Cassiopeia",
     "mode": 1
   },
   {
     "id": 24,
-    "name": "Chogath_rouleaux.jpg",
+    "name": "Chogath_rouleaux",
     "champion": "Chogath",
     "mode": 1
   },
-  { "id": 25, "name": "Darius_fleur.jpg", "champion": "Darius", "mode": 1 },
-  { "id": 26, "name": "Diana_combat.jpg", "champion": "Diana", "mode": 1 },
-  { "id": 27, "name": "Diana_hiver.jpg", "champion": "Diana", "mode": 1 },
-  { "id": 28, "name": "Diana_pyro.jpg", "champion": "Diana", "mode": 1 },
-  { "id": 29, "name": "Diana_sentinelle.jpg", "champion": "Diana", "mode": 1 },
-  { "id": 30, "name": "Draven_mecha.jpg", "champion": "Draven", "mode": 1 },
-  { "id": 31, "name": "Draven_nuit.jpg", "champion": "Draven", "mode": 1 },
-  { "id": 32, "name": "Elise_galactique.jpg", "champion": "Elise", "mode": 1 },
-  { "id": 33, "name": "Elise_rose.jpg", "champion": "Elise", "mode": 1 },
-  { "id": 34, "name": "Elise_sorciere.jpg", "champion": "Elise", "mode": 1 },
+  {
+    "id": 25,
+    "name": "Darius_fleur",
+    "champion": "Darius",
+    "mode": 1
+  },
+  {
+    "id": 26,
+    "name": "Diana_combat",
+    "champion": "Diana",
+    "mode": 1
+  },
+  {
+    "id": 27,
+    "name": "Diana_hiver",
+    "champion": "Diana",
+    "mode": 1
+  },
+  {
+    "id": 28,
+    "name": "Diana_pyro",
+    "champion": "Diana",
+    "mode": 1
+  },
+  {
+    "id": 29,
+    "name": "Diana_sentinelle",
+    "champion": "Diana",
+    "mode": 1
+  },
+  {
+    "id": 30,
+    "name": "Draven_mecha",
+    "champion": "Draven",
+    "mode": 1
+  },
+  {
+    "id": 31,
+    "name": "Draven_nuit",
+    "champion": "Draven",
+    "mode": 1
+  },
+  {
+    "id": 32,
+    "name": "Elise_galactique",
+    "champion": "Elise",
+    "mode": 1
+  },
+  {
+    "id": 33,
+    "name": "Elise_rose",
+    "champion": "Elise",
+    "mode": 1
+  },
+  {
+    "id": 34,
+    "name": "Elise_sorciere",
+    "champion": "Elise",
+    "mode": 1
+  },
   {
     "id": 35,
-    "name": "Evelynn_assemblee.jpg",
+    "name": "Evelynn_assemblee",
     "champion": "Evelynn",
     "mode": 1
   },
-  { "id": 36, "name": "Evelynn_fleur.jpg", "champion": "Evelynn", "mode": 1 },
-  { "id": 37, "name": "Evelynn_lune.jpg", "champion": "Evelynn", "mode": 1 },
-  { "id": 38, "name": "Evelynn_tango.jpg", "champion": "Evelynn", "mode": 1 },
-  { "id": 39, "name": "Fiora_lunaire.jpg", "champion": "Fiora", "mode": 1 },
-  { "id": 40, "name": "Fiora_pulsefire.jpg", "champion": "Fiora", "mode": 1 },
-  { "id": 41, "name": "Fiora_sorciere.jpg", "champion": "Fiora", "mode": 1 },
-  { "id": 42, "name": "Garen_renegat.jpg", "champion": "Garen", "mode": 1 },
-  { "id": 43, "name": "Irelia_assassin.jpg", "champion": "Irelia", "mode": 1 },
-  { "id": 44, "name": "Irelia_ig.jpg", "champion": "Irelia", "mode": 1 },
-  { "id": 45, "name": "Irelia_ouest.jpg", "champion": "Irelia", "mode": 1 },
-  { "id": 46, "name": "Janna_combat.jpg", "champion": "Janna", "mode": 1 },
-  { "id": 47, "name": "Janna_cyber.jpg", "champion": "Janna", "mode": 1 },
-  { "id": 48, "name": "Janna_rose.jpg", "champion": "Janna", "mode": 1 },
-  { "id": 49, "name": "Janna_sorciere.jpg", "champion": "Janna", "mode": 1 },
-  { "id": 50, "name": "Janna_star.jpg", "champion": "Janna", "mode": 1 },
-  { "id": 51, "name": "JarvanIV_hero.jpg", "champion": "JarvanIV", "mode": 1 },
+  {
+    "id": 36,
+    "name": "Evelynn_fleur",
+    "champion": "Evelynn",
+    "mode": 1
+  },
+  {
+    "id": 37,
+    "name": "Evelynn_lune",
+    "champion": "Evelynn",
+    "mode": 1
+  },
+  {
+    "id": 38,
+    "name": "Evelynn_tango",
+    "champion": "Evelynn",
+    "mode": 1
+  },
+  {
+    "id": 39,
+    "name": "Fiora_lunaire",
+    "champion": "Fiora",
+    "mode": 1
+  },
+  {
+    "id": 40,
+    "name": "Fiora_pulsefire",
+    "champion": "Fiora",
+    "mode": 1
+  },
+  {
+    "id": 41,
+    "name": "Fiora_sorciere",
+    "champion": "Fiora",
+    "mode": 1
+  },
+  {
+    "id": 42,
+    "name": "Garen_renegat",
+    "champion": "Garen",
+    "mode": 1
+  },
+  {
+    "id": 43,
+    "name": "Irelia_assassin",
+    "champion": "Irelia",
+    "mode": 1
+  },
+  {
+    "id": 44,
+    "name": "Irelia_ig",
+    "champion": "Irelia",
+    "mode": 1
+  },
+  {
+    "id": 45,
+    "name": "Irelia_ouest",
+    "champion": "Irelia",
+    "mode": 1
+  },
+  {
+    "id": 46,
+    "name": "Janna_combat",
+    "champion": "Janna",
+    "mode": 1
+  },
+  {
+    "id": 47,
+    "name": "Janna_cyber",
+    "champion": "Janna",
+    "mode": 1
+  },
+  {
+    "id": 48,
+    "name": "Janna_rose",
+    "champion": "Janna",
+    "mode": 1
+  },
+  {
+    "id": 49,
+    "name": "Janna_sorciere",
+    "champion": "Janna",
+    "mode": 1
+  },
+  {
+    "id": 50,
+    "name": "Janna_star",
+    "champion": "Janna",
+    "mode": 1
+  },
+  {
+    "id": 51,
+    "name": "JarvanIV_hero",
+    "champion": "JarvanIV",
+    "mode": 1
+  },
   {
     "id": 52,
-    "name": "JarvanIV_lunaire.jpg",
+    "name": "JarvanIV_lunaire",
     "champion": "JarvanIV",
     "mode": 1
   },
   {
     "id": 53,
-    "name": "JarvanIV_mondial.jpg",
+    "name": "JarvanIV_mondial",
     "champion": "JarvanIV",
     "mode": 1
   },
   {
     "id": 54,
-    "name": "JarvanIV_pulsar.jpg",
+    "name": "JarvanIV_pulsar",
     "champion": "JarvanIV",
     "mode": 1
   },
-  { "id": 55, "name": "JarvanIV_uv.jpg", "champion": "JarvanIV", "mode": 1 },
-  { "id": 56, "name": "Jayce_resistant.jpg", "champion": "Jayce", "mode": 1 },
-  { "id": 57, "name": "Jinx_arriviste.jpg", "champion": "Jinx", "mode": 1 },
-  { "id": 58, "name": "Jinx_chat.jpg", "champion": "Jinx", "mode": 1 },
-  { "id": 59, "name": "Jinx_coeur.jpg", "champion": "Jinx", "mode": 1 },
-  { "id": 60, "name": "Jinx_etoiles.jpg", "champion": "Jinx", "mode": 1 },
-  { "id": 61, "name": "Kaisa_dragon.jpg", "champion": "Kaisa", "mode": 1 },
-  { "id": 62, "name": "Kaisa_etoiles.jpg", "champion": "Kaisa", "mode": 1 },
-  { "id": 63, "name": "Karma_déchue.jpg", "champion": "Karma", "mode": 1 },
-  { "id": 64, "name": "Karma_odyssee.jpg", "champion": "Karma", "mode": 1 },
-  { "id": 65, "name": "Karma_pulsar.jpg", "champion": "Karma", "mode": 1 },
-  { "id": 66, "name": "Karthus_fleau.jpg", "champion": "Karthus", "mode": 1 },
+  {
+    "id": 55,
+    "name": "JarvanIV_uv",
+    "champion": "JarvanIV",
+    "mode": 1
+  },
+  {
+    "id": 56,
+    "name": "Jayce_resistant",
+    "champion": "Jayce",
+    "mode": 1
+  },
+  {
+    "id": 57,
+    "name": "Jinx_arriviste",
+    "champion": "Jinx",
+    "mode": 1
+  },
+  {
+    "id": 58,
+    "name": "Jinx_chat",
+    "champion": "Jinx",
+    "mode": 1
+  },
+  {
+    "id": 59,
+    "name": "Jinx_coeur",
+    "champion": "Jinx",
+    "mode": 1
+  },
+  {
+    "id": 60,
+    "name": "Jinx_etoiles",
+    "champion": "Jinx",
+    "mode": 1
+  },
+  {
+    "id": 61,
+    "name": "Kaisa_dragon",
+    "champion": "Kaisa",
+    "mode": 1
+  },
+  {
+    "id": 62,
+    "name": "Kaisa_etoiles",
+    "champion": "Kaisa",
+    "mode": 1
+  },
+  {
+    "id": 63,
+    "name": "Karma_déchue",
+    "champion": "Karma",
+    "mode": 1
+  },
+  {
+    "id": 64,
+    "name": "Karma_odyssee",
+    "champion": "Karma",
+    "mode": 1
+  },
+  {
+    "id": 65,
+    "name": "Karma_pulsar",
+    "champion": "Karma",
+    "mode": 1
+  },
+  {
+    "id": 66,
+    "name": "Karthus_fleau",
+    "champion": "Karthus",
+    "mode": 1
+  },
   {
     "id": 67,
-    "name": "Karthus_infernal.jpg",
+    "name": "Karthus_infernal",
     "champion": "Karthus",
     "mode": 1
   },
   {
     "id": 68,
-    "name": "Karthus_pentakill.jpg",
+    "name": "Karthus_pentakill",
     "champion": "Karthus",
     "mode": 1
   },
-  { "id": 69, "name": "Kassadin_comte.jpg", "champion": "Kassadin", "mode": 1 },
+  {
+    "id": 69,
+    "name": "Kassadin_comte",
+    "champion": "Kassadin",
+    "mode": 1
+  },
   {
     "id": 70,
-    "name": "Kassadin_electro.jpg",
+    "name": "Kassadin_electro",
     "champion": "Kassadin",
     "mode": 1
   },
   {
     "id": 71,
-    "name": "Katarina_academie.jpg",
+    "name": "Katarina_academie",
     "champion": "Katarina",
     "mode": 1
   },
   {
     "id": 72,
-    "name": "Katarina_combat.jpg",
+    "name": "Katarina_combat",
     "champion": "Katarina",
     "mode": 1
   },
-  { "id": 73, "name": "Katarina_lune.jpg", "champion": "Katarina", "mode": 1 },
-  { "id": 74, "name": "Katarina_ouest.jpg", "champion": "Katarina", "mode": 1 },
+  {
+    "id": 73,
+    "name": "Katarina_lune",
+    "champion": "Katarina",
+    "mode": 1
+  },
+  {
+    "id": 74,
+    "name": "Katarina_ouest",
+    "champion": "Katarina",
+    "mode": 1
+  },
   {
     "id": 75,
-    "name": "Katarina_thanatophore.jpg",
+    "name": "Katarina_thanatophore",
     "champion": "Katarina",
     "mode": 1
   },
-  { "id": 76, "name": "Kayle_dragon.jpg", "champion": "Kayle", "mode": 1 },
-  { "id": 77, "name": "Kayle_pentakill.jpg", "champion": "Kayle", "mode": 1 },
-  { "id": 78, "name": "Kayle_pentakill3.jpg", "champion": "Kayle", "mode": 1 },
-  { "id": 79, "name": "Kayle_psycho.jpg", "champion": "Kayle", "mode": 1 },
-  { "id": 80, "name": "Kayle_soleil.jpg", "champion": "Kayle", "mode": 1 },
-  { "id": 81, "name": "Kayle_transcendee.jpg", "champion": "Kayle", "mode": 1 },
-  { "id": 82, "name": "Kayle_viridienne.jpg", "champion": "Kayle", "mode": 1 },
-  { "id": 83, "name": "Kayn_neige.jpg", "champion": "Kayn", "mode": 1 },
-  { "id": 84, "name": "Kayn_nuit.jpg", "champion": "Kayn", "mode": 1 },
-  { "id": 85, "name": "Kayn_prestige.jpg", "champion": "Kayn", "mode": 1 },
-  { "id": 86, "name": "Kennen_dwg.jpg", "champion": "Kennen", "mode": 1 },
-  { "id": 87, "name": "Kennen_lune.jpg", "champion": "Kennen", "mode": 1 },
-  { "id": 88, "name": "Kennen_super.jpg", "champion": "Kennen", "mode": 1 },
+  {
+    "id": 76,
+    "name": "Kayle_dragon",
+    "champion": "Kayle",
+    "mode": 1
+  },
+  {
+    "id": 77,
+    "name": "Kayle_pentakill",
+    "champion": "Kayle",
+    "mode": 1
+  },
+  {
+    "id": 78,
+    "name": "Kayle_pentakill3",
+    "champion": "Kayle",
+    "mode": 1
+  },
+  {
+    "id": 79,
+    "name": "Kayle_psycho",
+    "champion": "Kayle",
+    "mode": 1
+  },
+  {
+    "id": 80,
+    "name": "Kayle_soleil",
+    "champion": "Kayle",
+    "mode": 1
+  },
+  {
+    "id": 81,
+    "name": "Kayle_transcendee",
+    "champion": "Kayle",
+    "mode": 1
+  },
+  {
+    "id": 82,
+    "name": "Kayle_viridienne",
+    "champion": "Kayle",
+    "mode": 1
+  },
+  {
+    "id": 83,
+    "name": "Kayn_neige",
+    "champion": "Kayn",
+    "mode": 1
+  },
+  {
+    "id": 84,
+    "name": "Kayn_nuit",
+    "champion": "Kayn",
+    "mode": 1
+  },
+  {
+    "id": 85,
+    "name": "Kayn_prestige",
+    "champion": "Kayn",
+    "mode": 1
+  },
+  {
+    "id": 86,
+    "name": "Kennen_dwg",
+    "champion": "Kennen",
+    "mode": 1
+  },
+  {
+    "id": 87,
+    "name": "Kennen_lune",
+    "champion": "Kennen",
+    "mode": 1
+  },
+  {
+    "id": 88,
+    "name": "Kennen_super",
+    "champion": "Kennen",
+    "mode": 1
+  },
   {
     "id": 89,
-    "name": "Kindred_galactique.jpg",
+    "name": "Kindred_galactique",
     "champion": "Kindred",
     "mode": 1
   },
   {
     "id": 90,
-    "name": "Kindred_porcelaine.jpg",
+    "name": "Kindred_porcelaine",
     "champion": "Kindred",
     "mode": 1
   },
-  { "id": 91, "name": "Kled_maraudeur.jpg", "champion": "Kled", "mode": 1 },
-  { "id": 92, "name": "KogMaw_abeille.jpg", "champion": "KogMaw", "mode": 1 },
-  { "id": 93, "name": "KogMaw_zap.jpg", "champion": "KogMaw", "mode": 1 },
+  {
+    "id": 91,
+    "name": "Kled_maraudeur",
+    "champion": "Kled",
+    "mode": 1
+  },
+  {
+    "id": 92,
+    "name": "KogMaw_abeille",
+    "champion": "KogMaw",
+    "mode": 1
+  },
+  {
+    "id": 93,
+    "name": "KogMaw_zap",
+    "champion": "KogMaw",
+    "mode": 1
+  },
   {
     "id": 94,
-    "name": "Leblanc_assemblee.jpg",
+    "name": "Leblanc_assemblee",
     "champion": "Leblanc",
     "mode": 1
   },
   {
     "id": 95,
-    "name": "Leblanc_championnat.jpg",
+    "name": "Leblanc_championnat",
     "champion": "Leblanc",
     "mode": 1
   },
-  { "id": 96, "name": "Leblanc_ig.jpg", "champion": "Leblanc", "mode": 1 },
+  {
+    "id": 96,
+    "name": "Leblanc_ig",
+    "champion": "Leblanc",
+    "mode": 1
+  },
   {
     "id": 97,
-    "name": "Leblanc_programme.jpg",
+    "name": "Leblanc_programme",
     "champion": "Leblanc",
     "mode": 1
   },
   {
     "id": 98,
-    "name": "Leblanc_seductrice.jpg",
+    "name": "Leblanc_seductrice",
     "champion": "Leblanc",
     "mode": 1
   },
   {
     "id": 99,
-    "name": "Leblanc_sorciere.jpg",
+    "name": "Leblanc_sorciere",
     "champion": "Leblanc",
     "mode": 1
   },
   {
     "id": 100,
-    "name": "Leblanc_sylvestre.jpg",
+    "name": "Leblanc_sylvestre",
     "champion": "Leblanc",
     "mode": 1
   },
-  { "id": 101, "name": "LeeSin_fpx.jpg", "champion": "LeeSin", "mode": 1 },
-  { "id": 102, "name": "LeeSin_prestige.jpg", "champion": "LeeSin", "mode": 1 },
-  { "id": 103, "name": "LeeSin_zenith.jpg", "champion": "LeeSin", "mode": 1 },
-  { "id": 104, "name": "Leona_academie.jpg", "champion": "Leona", "mode": 1 },
-  { "id": 105, "name": "Leona_dwg.jpg", "champion": "Leona", "mode": 1 },
-  { "id": 106, "name": "Leona_ouest.jpg", "champion": "Leona", "mode": 1 },
-  { "id": 107, "name": "Leona_seductrice.jpg", "champion": "Leona", "mode": 1 },
+  {
+    "id": 101,
+    "name": "LeeSin_fpx",
+    "champion": "LeeSin",
+    "mode": 1
+  },
+  {
+    "id": 102,
+    "name": "LeeSin_prestige",
+    "champion": "LeeSin",
+    "mode": 1
+  },
+  {
+    "id": 103,
+    "name": "LeeSin_zenith",
+    "champion": "LeeSin",
+    "mode": 1
+  },
+  {
+    "id": 104,
+    "name": "Leona_academie",
+    "champion": "Leona",
+    "mode": 1
+  },
+  {
+    "id": 105,
+    "name": "Leona_dwg",
+    "champion": "Leona",
+    "mode": 1
+  },
+  {
+    "id": 106,
+    "name": "Leona_ouest",
+    "champion": "Leona",
+    "mode": 1
+  },
+  {
+    "id": 107,
+    "name": "Leona_seductrice",
+    "champion": "Leona",
+    "mode": 1
+  },
   {
     "id": 108,
-    "name": "Lissandra_assemblee.jpg",
+    "name": "Lissandra_assemblee",
     "champion": "Lissandra",
     "mode": 1
   },
   {
     "id": 109,
-    "name": "Lissandra_astro.jpg",
+    "name": "Lissandra_astro",
     "champion": "Lissandra",
     "mode": 1
   },
-  { "id": 110, "name": "Lulu_astro.jpg", "champion": "Lulu", "mode": 1 },
-  { "id": 111, "name": "Lulu_dresseuse.jpg", "champion": "Lulu", "mode": 1 },
-  { "id": 112, "name": "Lulu_etoiles.jpg", "champion": "Lulu", "mode": 1 },
-  { "id": 113, "name": "Lux_academie.jpg", "champion": "Lux", "mode": 1 },
-  { "id": 114, "name": "Lux_porcelaine.jpg", "champion": "Lux", "mode": 1 },
-  { "id": 115, "name": "Lux_pyjama.jpg", "champion": "Lux", "mode": 1 },
-  { "id": 116, "name": "Malzahar_boss.jpg", "champion": "Malzahar", "mode": 1 },
+  {
+    "id": 110,
+    "name": "Lulu_astro",
+    "champion": "Lulu",
+    "mode": 1
+  },
+  {
+    "id": 111,
+    "name": "Lulu_dresseuse",
+    "champion": "Lulu",
+    "mode": 1
+  },
+  {
+    "id": 112,
+    "name": "Lulu_etoiles",
+    "champion": "Lulu",
+    "mode": 1
+  },
+  {
+    "id": 113,
+    "name": "Lux_academie",
+    "champion": "Lux",
+    "mode": 1
+  },
+  {
+    "id": 114,
+    "name": "Lux_porcelaine",
+    "champion": "Lux",
+    "mode": 1
+  },
+  {
+    "id": 115,
+    "name": "Lux_pyjama",
+    "champion": "Lux",
+    "mode": 1
+  },
+  {
+    "id": 116,
+    "name": "Malzahar_boss",
+    "champion": "Malzahar",
+    "mode": 1
+  },
   {
     "id": 117,
-    "name": "Malzahar_brise.jpg",
+    "name": "Malzahar_brise",
     "champion": "Malzahar",
     "mode": 1
   },
   {
     "id": 118,
-    "name": "Malzahar_hextech.jpg",
+    "name": "Malzahar_hextech",
     "champion": "Malzahar",
     "mode": 1
   },
   {
     "id": 119,
-    "name": "Malzahar_honneur.jpg",
+    "name": "Malzahar_honneur",
     "champion": "Malzahar",
     "mode": 1
   },
   {
     "id": 120,
-    "name": "Malzahar_seducteur.jpg",
+    "name": "Malzahar_seducteur",
     "champion": "Malzahar",
     "mode": 1
   },
-  { "id": 121, "name": "Maokai_totem.jpg", "champion": "Maokai", "mode": 1 },
+  {
+    "id": 121,
+    "name": "Maokai_totem",
+    "champion": "Maokai",
+    "mode": 1
+  },
   {
     "id": 122,
-    "name": "MasterYi_fleur.jpg",
+    "name": "MasterYi_fleur",
     "champion": "MasterYi",
     "mode": 1
   },
-  { "id": 123, "name": "MasterYi_lune.jpg", "champion": "MasterYi", "mode": 1 },
+  {
+    "id": 123,
+    "name": "MasterYi_lune",
+    "champion": "MasterYi",
+    "mode": 1
+  },
   {
     "id": 124,
-    "name": "MasterYi_neige.jpg",
+    "name": "MasterYi_neige",
     "champion": "MasterYi",
     "mode": 1
   },
   {
     "id": 125,
-    "name": "MasterYi_psycho.jpg",
+    "name": "MasterYi_psycho",
     "champion": "MasterYi",
     "mode": 1
   },
   {
     "id": 126,
-    "name": "MasterYi_seducteur.jpg",
+    "name": "MasterYi_seducteur",
     "champion": "MasterYi",
     "mode": 1
   },
   {
     "id": 127,
-    "name": "MonkeyKing_academie.jpg",
+    "name": "MonkeyKing_academie",
     "champion": "MonkeyKing",
     "mode": 1
   },
   {
     "id": 128,
-    "name": "MonkeyKing_mecha.jpg",
+    "name": "MonkeyKing_mecha",
     "champion": "MonkeyKing",
     "mode": 1
   },
   {
     "id": 129,
-    "name": "Morgana_assemblee.jpg",
+    "name": "Morgana_assemblee",
     "champion": "Morgana",
     "mode": 1
   },
-  { "id": 130, "name": "Morgana_aube.jpg", "champion": "Morgana", "mode": 1 },
+  {
+    "id": 130,
+    "name": "Morgana_aube",
+    "champion": "Morgana",
+    "mode": 1
+  },
   {
     "id": 131,
-    "name": "Morgana_etoiles.jpg",
+    "name": "Morgana_etoiles",
     "champion": "Morgana",
     "mode": 1
   },
-  { "id": 132, "name": "Morgana_exilee.jpg", "champion": "Morgana", "mode": 1 },
+  {
+    "id": 132,
+    "name": "Morgana_exilee",
+    "champion": "Morgana",
+    "mode": 1
+  },
   {
     "id": 133,
-    "name": "Morgana_imperatrice.jpg",
+    "name": "Morgana_imperatrice",
     "champion": "Morgana",
     "mode": 1
   },
   {
     "id": 134,
-    "name": "Morgana_sorciere.jpg",
+    "name": "Morgana_sorciere",
     "champion": "Morgana",
     "mode": 1
   },
-  { "id": 135, "name": "Nami_astro.jpg", "champion": "Nami", "mode": 1 },
-  { "id": 136, "name": "Nami_baton.jpg", "champion": "Nami", "mode": 1 },
-  { "id": 137, "name": "Nami_cosmique.jpg", "champion": "Nami", "mode": 1 },
-  { "id": 138, "name": "Nami_prestige.jpg", "champion": "Nami", "mode": 1 },
-  { "id": 139, "name": "Nami_skt.jpg", "champion": "Nami", "mode": 1 },
-  { "id": 140, "name": "Nami_sorciere.jpg", "champion": "Nami", "mode": 1 },
-  { "id": 141, "name": "Nasus_astro.jpg", "champion": "Nasus", "mode": 1 },
-  { "id": 142, "name": "Nasus_titan.jpg", "champion": "Nasus", "mode": 1 },
-  { "id": 143, "name": "Nautilus_nuit.jpg", "champion": "Nautilus", "mode": 1 },
   {
-    "id": 144,
-    "name": "Nautilus_rouleaux.jpg",
+    "id": 135,
+    "name": "Nami_astro",
+    "champion": "Nami",
+    "mode": 1
+  },
+  {
+    "id": 136,
+    "name": "Nami_baton",
+    "champion": "Nami",
+    "mode": 1
+  },
+  {
+    "id": 137,
+    "name": "Nami_cosmique",
+    "champion": "Nami",
+    "mode": 1
+  },
+  {
+    "id": 138,
+    "name": "Nami_prestige",
+    "champion": "Nami",
+    "mode": 1
+  },
+  {
+    "id": 139,
+    "name": "Nami_skt",
+    "champion": "Nami",
+    "mode": 1
+  },
+  {
+    "id": 140,
+    "name": "Nami_sorciere",
+    "champion": "Nami",
+    "mode": 1
+  },
+  {
+    "id": 141,
+    "name": "Nasus_astro",
+    "champion": "Nasus",
+    "mode": 1
+  },
+  {
+    "id": 142,
+    "name": "Nasus_titan",
+    "champion": "Nasus",
+    "mode": 1
+  },
+  {
+    "id": 143,
+    "name": "Nautilus_nuit",
     "champion": "Nautilus",
     "mode": 1
   },
-  { "id": 145, "name": "Neeko_sorciere.jpg", "champion": "Neeko", "mode": 1 },
+  {
+    "id": 144,
+    "name": "Nautilus_rouleaux",
+    "champion": "Nautilus",
+    "mode": 1
+  },
+  {
+    "id": 145,
+    "name": "Neeko_sorciere",
+    "champion": "Neeko",
+    "mode": 1
+  },
   {
     "id": 146,
-    "name": "Nidalee_cosmique.jpg",
+    "name": "Nidalee_cosmique",
     "champion": "Nidalee",
     "mode": 1
   },
   {
     "id": 147,
-    "name": "Nidalee_galactique.jpg",
+    "name": "Nidalee_galactique",
     "champion": "Nidalee",
     "mode": 1
   },
   {
     "id": 148,
-    "name": "Nidalee_sorciere.jpg",
+    "name": "Nidalee_sorciere",
     "champion": "Nidalee",
     "mode": 1
   },
-  { "id": 149, "name": "Nocturne_dieu.jpg", "champion": "Nocturne", "mode": 1 },
-  { "id": 150, "name": "Olaf_pentakill.jpg", "champion": "Olaf", "mode": 1 },
-  { "id": 151, "name": "Orianna_pulsar.jpg", "champion": "Orianna", "mode": 1 },
-  { "id": 152, "name": "Poppy_sorciere.jpg", "champion": "Poppy", "mode": 1 },
-  { "id": 153, "name": "Quinn_coeur.jpg", "champion": "Quinn", "mode": 1 },
-  { "id": 154, "name": "Quinn_etoiles.jpg", "champion": "Quinn", "mode": 1 },
-  { "id": 155, "name": "Rengar_mecha.jpg", "champion": "Rengar", "mode": 1 },
-  { "id": 156, "name": "Riven_epee.jpg", "champion": "Riven", "mode": 1 },
-  { "id": 157, "name": "Rumble_astro.jpg", "champion": "Rumble", "mode": 1 },
-  { "id": 158, "name": "Ryze_arcanes.jpg", "champion": "Ryze", "mode": 1 },
-  { "id": 159, "name": "Sejuani_aube.jpg", "champion": "Sejuani", "mode": 1 },
+  {
+    "id": 149,
+    "name": "Nocturne_dieu",
+    "champion": "Nocturne",
+    "mode": 1
+  },
+  {
+    "id": 150,
+    "name": "Olaf_pentakill",
+    "champion": "Olaf",
+    "mode": 1
+  },
+  {
+    "id": 151,
+    "name": "Orianna_pulsar",
+    "champion": "Orianna",
+    "mode": 1
+  },
+  {
+    "id": 152,
+    "name": "Poppy_sorciere",
+    "champion": "Poppy",
+    "mode": 1
+  },
+  {
+    "id": 153,
+    "name": "Quinn_coeur",
+    "champion": "Quinn",
+    "mode": 1
+  },
+  {
+    "id": 154,
+    "name": "Quinn_etoiles",
+    "champion": "Quinn",
+    "mode": 1
+  },
+  {
+    "id": 155,
+    "name": "Rengar_mecha",
+    "champion": "Rengar",
+    "mode": 1
+  },
+  {
+    "id": 156,
+    "name": "Riven_epee",
+    "champion": "Riven",
+    "mode": 1
+  },
+  {
+    "id": 157,
+    "name": "Rumble_astro",
+    "champion": "Rumble",
+    "mode": 1
+  },
+  {
+    "id": 158,
+    "name": "Ryze_arcanes",
+    "champion": "Ryze",
+    "mode": 1
+  },
+  {
+    "id": 159,
+    "name": "Sejuani_aube",
+    "champion": "Sejuani",
+    "mode": 1
+  },
   {
     "id": 160,
-    "name": "Sejuani_eclypse.jpg",
+    "name": "Sejuani_eclypse",
     "champion": "Sejuani",
     "mode": 1
   },
-  { "id": 161, "name": "Sejuani_hero.jpg", "champion": "Sejuani", "mode": 1 },
+  {
+    "id": 161,
+    "name": "Sejuani_hero",
+    "champion": "Sejuani",
+    "mode": 1
+  },
   {
     "id": 162,
-    "name": "Sejuani_hextech.jpg",
+    "name": "Sejuani_hextech",
     "champion": "Sejuani",
     "mode": 1
   },
-  { "id": 163, "name": "Sejuani_pyro.jpg", "champion": "Sejuani", "mode": 1 },
-  { "id": 164, "name": "Senna_sorciere.jpg", "champion": "Senna", "mode": 1 },
+  {
+    "id": 163,
+    "name": "Sejuani_pyro",
+    "champion": "Sejuani",
+    "mode": 1
+  },
+  {
+    "id": 164,
+    "name": "Senna_sorciere",
+    "champion": "Senna",
+    "mode": 1
+  },
   {
     "id": 165,
-    "name": "Seraphine_ocean.jpg",
+    "name": "Seraphine_ocean",
     "champion": "Seraphine",
     "mode": 1
   },
   {
     "id": 166,
-    "name": "Seraphine_phenix.jpg",
+    "name": "Seraphine_phenix",
     "champion": "Seraphine",
     "mode": 1
   },
-  { "id": 167, "name": "Sett_mecha.jpg", "champion": "Sett", "mode": 1 },
-  { "id": 168, "name": "Shen_electro.jpg", "champion": "Shen", "mode": 1 },
-  { "id": 169, "name": "Shen_infernal.jpg", "champion": "Shen", "mode": 1 },
+  {
+    "id": 167,
+    "name": "Sett_mecha",
+    "champion": "Sett",
+    "mode": 1
+  },
+  {
+    "id": 168,
+    "name": "Shen_electro",
+    "champion": "Shen",
+    "mode": 1
+  },
+  {
+    "id": 169,
+    "name": "Shen_infernal",
+    "champion": "Shen",
+    "mode": 1
+  },
   {
     "id": 170,
-    "name": "Shyvana_chamane.jpg",
+    "name": "Shyvana_chamane",
     "champion": "Shyvana",
     "mode": 1
   },
-  { "id": 171, "name": "Shyvana_dechu.jpg", "champion": "Shyvana", "mode": 1 },
-  { "id": 172, "name": "Sion_barbare.jpg", "champion": "Sion", "mode": 1 },
-  { "id": 173, "name": "Sion_glace.jpg", "champion": "Sion", "mode": 1 },
-  { "id": 174, "name": "Sivir_cafe.jpg", "champion": "Sivir", "mode": 1 },
-  { "id": 175, "name": "Sivir_eclypse.jpg", "champion": "Sivir", "mode": 1 },
-  { "id": 176, "name": "Sivir_lune.jpg", "champion": "Sivir", "mode": 1 },
-  { "id": 177, "name": "Sivir_odyssee.jpg", "champion": "Sivir", "mode": 1 },
-  { "id": 178, "name": "Sivir_pax.jpg", "champion": "Sivir", "mode": 1 },
-  { "id": 179, "name": "Sona_coeur.jpg", "champion": "Sona", "mode": 1 },
-  { "id": 180, "name": "Sona_etoiles.jpg", "champion": "Sona", "mode": 1 },
-  { "id": 181, "name": "Sona_odyssee.jpg", "champion": "Sona", "mode": 1 },
-  { "id": 182, "name": "Sona_psycho.jpg", "champion": "Sona", "mode": 1 },
-  { "id": 183, "name": "Soraka_divine.jpg", "champion": "Soraka", "mode": 1 },
-  { "id": 184, "name": "Soraka_hivernal.jpg", "champion": "Soraka", "mode": 1 },
-  { "id": 185, "name": "Soraka_prestige.jpg", "champion": "Soraka", "mode": 1 },
-  { "id": 186, "name": "Swain_bilgewater.jpg", "champion": "Swain", "mode": 1 },
-  { "id": 187, "name": "Swain_hiver.jpg", "champion": "Swain", "mode": 1 },
-  { "id": 188, "name": "Swain_rose.jpg", "champion": "Swain", "mode": 1 },
-  { "id": 189, "name": "Swain_tyran.jpg", "champion": "Swain", "mode": 1 },
-  { "id": 190, "name": "Sylas_loup.jpg", "champion": "Sylas", "mode": 1 },
-  { "id": 191, "name": "Sylas_prestige.jpg", "champion": "Sylas", "mode": 1 },
-  { "id": 192, "name": "Syndra_beach.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 193, "name": "Syndra_carreau.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 194, "name": "Syndra_etoiles.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 195, "name": "Syndra_fleur.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 196, "name": "Syndra_prestige.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 197, "name": "Syndra_rose.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 198, "name": "Syndra_skt.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 199, "name": "Syndra_sorciere.jpg", "champion": "Syndra", "mode": 1 },
-  { "id": 200, "name": "Talon_epee.jpg", "champion": "Talon", "mode": 1 },
-  { "id": 201, "name": "Talon_lune.jpg", "champion": "Talon", "mode": 1 },
-  { "id": 202, "name": "Talon_ouest.jpg", "champion": "Talon", "mode": 1 },
-  { "id": 203, "name": "Talon_rose.jpg", "champion": "Talon", "mode": 1 },
-  { "id": 204, "name": "Talon_sylvenoir.jpg", "champion": "Talon", "mode": 1 },
-  { "id": 205, "name": "Teemo_astro.jpg", "champion": "Teemo", "mode": 1 },
-  { "id": 206, "name": "Teemo_pyro.jpg", "champion": "Teemo", "mode": 1 },
-  { "id": 207, "name": "Thresh_fleur.jpg", "champion": "Thresh", "mode": 1 },
-  { "id": 208, "name": "Thresh_libere.jpg", "champion": "Thresh", "mode": 1 },
+  {
+    "id": 171,
+    "name": "Shyvana_dechu",
+    "champion": "Shyvana",
+    "mode": 1
+  },
+  {
+    "id": 172,
+    "name": "Sion_barbare",
+    "champion": "Sion",
+    "mode": 1
+  },
+  {
+    "id": 173,
+    "name": "Sion_glace",
+    "champion": "Sion",
+    "mode": 1
+  },
+  {
+    "id": 174,
+    "name": "Sivir_cafe",
+    "champion": "Sivir",
+    "mode": 1
+  },
+  {
+    "id": 175,
+    "name": "Sivir_eclypse",
+    "champion": "Sivir",
+    "mode": 1
+  },
+  {
+    "id": 176,
+    "name": "Sivir_lune",
+    "champion": "Sivir",
+    "mode": 1
+  },
+  {
+    "id": 177,
+    "name": "Sivir_odyssee",
+    "champion": "Sivir",
+    "mode": 1
+  },
+  {
+    "id": 178,
+    "name": "Sivir_pax",
+    "champion": "Sivir",
+    "mode": 1
+  },
+  {
+    "id": 179,
+    "name": "Sona_coeur",
+    "champion": "Sona",
+    "mode": 1
+  },
+  {
+    "id": 180,
+    "name": "Sona_etoiles",
+    "champion": "Sona",
+    "mode": 1
+  },
+  {
+    "id": 181,
+    "name": "Sona_odyssee",
+    "champion": "Sona",
+    "mode": 1
+  },
+  {
+    "id": 182,
+    "name": "Sona_psycho",
+    "champion": "Sona",
+    "mode": 1
+  },
+  {
+    "id": 183,
+    "name": "Soraka_divine",
+    "champion": "Soraka",
+    "mode": 1
+  },
+  {
+    "id": 184,
+    "name": "Soraka_hivernal",
+    "champion": "Soraka",
+    "mode": 1
+  },
+  {
+    "id": 185,
+    "name": "Soraka_prestige",
+    "champion": "Soraka",
+    "mode": 1
+  },
+  {
+    "id": 186,
+    "name": "Swain_bilgewater",
+    "champion": "Swain",
+    "mode": 1
+  },
+  {
+    "id": 187,
+    "name": "Swain_hiver",
+    "champion": "Swain",
+    "mode": 1
+  },
+  {
+    "id": 188,
+    "name": "Swain_rose",
+    "champion": "Swain",
+    "mode": 1
+  },
+  {
+    "id": 189,
+    "name": "Swain_tyran",
+    "champion": "Swain",
+    "mode": 1
+  },
+  {
+    "id": 190,
+    "name": "Sylas_loup",
+    "champion": "Sylas",
+    "mode": 1
+  },
+  {
+    "id": 191,
+    "name": "Sylas_prestige",
+    "champion": "Sylas",
+    "mode": 1
+  },
+  {
+    "id": 192,
+    "name": "Syndra_beach",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 193,
+    "name": "Syndra_carreau",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 194,
+    "name": "Syndra_etoiles",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 195,
+    "name": "Syndra_fleur",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 196,
+    "name": "Syndra_prestige",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 197,
+    "name": "Syndra_rose",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 198,
+    "name": "Syndra_skt",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 199,
+    "name": "Syndra_sorciere",
+    "champion": "Syndra",
+    "mode": 1
+  },
+  {
+    "id": 200,
+    "name": "Talon_epee",
+    "champion": "Talon",
+    "mode": 1
+  },
+  {
+    "id": 201,
+    "name": "Talon_lune",
+    "champion": "Talon",
+    "mode": 1
+  },
+  {
+    "id": 202,
+    "name": "Talon_ouest",
+    "champion": "Talon",
+    "mode": 1
+  },
+  {
+    "id": 203,
+    "name": "Talon_rose",
+    "champion": "Talon",
+    "mode": 1
+  },
+  {
+    "id": 204,
+    "name": "Talon_sylvenoir",
+    "champion": "Talon",
+    "mode": 1
+  },
+  {
+    "id": 205,
+    "name": "Teemo_astro",
+    "champion": "Teemo",
+    "mode": 1
+  },
+  {
+    "id": 206,
+    "name": "Teemo_pyro",
+    "champion": "Teemo",
+    "mode": 1
+  },
+  {
+    "id": 207,
+    "name": "Thresh_fleur",
+    "champion": "Thresh",
+    "mode": 1
+  },
+  {
+    "id": 208,
+    "name": "Thresh_libere",
+    "champion": "Thresh",
+    "mode": 1
+  },
   {
     "id": 209,
-    "name": "Tristana_cosplay.jpg",
+    "name": "Tristana_cosplay",
     "champion": "Tristana",
     "mode": 1
   },
   {
     "id": 210,
-    "name": "Tristana_hextech.jpg",
+    "name": "Tristana_hextech",
     "champion": "Tristana",
     "mode": 1
   },
   {
     "id": 211,
-    "name": "Tristana_sorciere.jpg",
+    "name": "Tristana_sorciere",
     "champion": "Tristana",
     "mode": 1
   },
   {
     "id": 212,
-    "name": "Tryndamere_lune.jpg",
+    "name": "Tryndamere_lune",
     "champion": "Tryndamere",
     "mode": 1
   },
   {
     "id": 213,
-    "name": "Tryndamere_nuit.jpg",
+    "name": "Tryndamere_nuit",
     "champion": "Tryndamere",
     "mode": 1
   },
   {
     "id": 214,
-    "name": "TwistedFate_astro.jpg",
+    "name": "TwistedFate_astro",
     "champion": "TwistedFate",
     "mode": 1
   },
   {
     "id": 215,
-    "name": "TwistedFate_dwg.jpg",
+    "name": "TwistedFate_dwg",
     "champion": "TwistedFate",
     "mode": 1
   },
   {
     "id": 216,
-    "name": "TwistedFate_lune.jpg",
+    "name": "TwistedFate_lune",
     "champion": "TwistedFate",
     "mode": 1
   },
-  { "id": 217, "name": "Urgot_crabe.jpg", "champion": "Urgot", "mode": 1 },
-  { "id": 218, "name": "Urgot_nuit.jpg", "champion": "Urgot", "mode": 1 },
-  { "id": 219, "name": "Varus_ouest.jpg", "champion": "Varus", "mode": 1 },
-  { "id": 220, "name": "Vayne_bat.jpg", "champion": "Vayne", "mode": 1 },
-  { "id": 221, "name": "Vayne_fleur.jpg", "champion": "Vayne", "mode": 1 },
-  { "id": 222, "name": "Vayne_fpx.jpg", "champion": "Vayne", "mode": 1 },
-  { "id": 223, "name": "Vayne_pyro.jpg", "champion": "Vayne", "mode": 1 },
+  {
+    "id": 217,
+    "name": "Urgot_crabe",
+    "champion": "Urgot",
+    "mode": 1
+  },
+  {
+    "id": 218,
+    "name": "Urgot_nuit",
+    "champion": "Urgot",
+    "mode": 1
+  },
+  {
+    "id": 219,
+    "name": "Varus_ouest",
+    "champion": "Varus",
+    "mode": 1
+  },
+  {
+    "id": 220,
+    "name": "Vayne_bat",
+    "champion": "Vayne",
+    "mode": 1
+  },
+  {
+    "id": 221,
+    "name": "Vayne_fleur",
+    "champion": "Vayne",
+    "mode": 1
+  },
+  {
+    "id": 222,
+    "name": "Vayne_fpx",
+    "champion": "Vayne",
+    "mode": 1
+  },
+  {
+    "id": 223,
+    "name": "Vayne_pyro",
+    "champion": "Vayne",
+    "mode": 1
+  },
   {
     "id": 224,
-    "name": "Veigar_astronaute.jpg",
+    "name": "Veigar_astronaute",
     "champion": "Veigar",
     "mode": 1
   },
-  { "id": 225, "name": "Veigar_monstre.jpg", "champion": "Veigar", "mode": 1 },
-  { "id": 226, "name": "Veigar_omega.jpg", "champion": "Veigar", "mode": 1 },
-  { "id": 227, "name": "Vex_empyreenne.jpg", "champion": "Vex", "mode": 1 },
-  { "id": 228, "name": "Vi_coeur.jpg", "champion": "Vi", "mode": 1 },
-  { "id": 229, "name": "Viego_roi.jpg", "champion": "Viego", "mode": 1 },
-  { "id": 230, "name": "Viktor_ouest.jpg", "champion": "Viktor", "mode": 1 },
   {
-    "id": 231,
-    "name": "Viktor_thanatophore.jpg",
+    "id": 225,
+    "name": "Veigar_monstre",
+    "champion": "Veigar",
+    "mode": 1
+  },
+  {
+    "id": 226,
+    "name": "Veigar_omega",
+    "champion": "Veigar",
+    "mode": 1
+  },
+  {
+    "id": 227,
+    "name": "Vex_empyreenne",
+    "champion": "Vex",
+    "mode": 1
+  },
+  {
+    "id": 228,
+    "name": "Vi_coeur",
+    "champion": "Vi",
+    "mode": 1
+  },
+  {
+    "id": 229,
+    "name": "Viego_roi",
+    "champion": "Viego",
+    "mode": 1
+  },
+  {
+    "id": 230,
+    "name": "Viktor_ouest",
     "champion": "Viktor",
     "mode": 1
   },
-  { "id": 232, "name": "Vladimir_cafe.jpg", "champion": "Vladimir", "mode": 1 },
+  {
+    "id": 231,
+    "name": "Viktor_thanatophore",
+    "champion": "Viktor",
+    "mode": 1
+  },
+  {
+    "id": 232,
+    "name": "Vladimir_cafe",
+    "champion": "Vladimir",
+    "mode": 1
+  },
   {
     "id": 233,
-    "name": "Vladimir_nosferatu.jpg",
+    "name": "Vladimir_nosferatu",
     "champion": "Vladimir",
     "mode": 1
   },
   {
     "id": 234,
-    "name": "Volibear_piques.jpg",
+    "name": "Volibear_piques",
     "champion": "Volibear",
     "mode": 1
   },
-  { "id": 235, "name": "Warwick_projet.jpg", "champion": "Warwick", "mode": 1 },
-  { "id": 236, "name": "Xayah_etoiles.jpg", "champion": "Xayah", "mode": 1 },
-  { "id": 237, "name": "Xayah_phenix.jpg", "champion": "Xayah", "mode": 1 },
-  { "id": 238, "name": "Xerath_arcanes.jpg", "champion": "Xerath", "mode": 1 },
+  {
+    "id": 235,
+    "name": "Warwick_projet",
+    "champion": "Warwick",
+    "mode": 1
+  },
+  {
+    "id": 236,
+    "name": "Xayah_etoiles",
+    "champion": "Xayah",
+    "mode": 1
+  },
+  {
+    "id": 237,
+    "name": "Xayah_phenix",
+    "champion": "Xayah",
+    "mode": 1
+  },
+  {
+    "id": 238,
+    "name": "Xerath_arcanes",
+    "champion": "Xerath",
+    "mode": 1
+  },
   {
     "id": 239,
-    "name": "XinZhao_cosmique.jpg",
+    "name": "XinZhao_cosmique",
     "champion": "XinZhao",
     "mode": 1
   },
-  { "id": 240, "name": "XinZhao_dragon.jpg", "champion": "XinZhao", "mode": 1 },
-  { "id": 241, "name": "XinZhao_pyro.jpg", "champion": "XinZhao", "mode": 1 },
-  { "id": 242, "name": "Yasuo_lune.jpg", "champion": "Yasuo", "mode": 1 },
-  { "id": 243, "name": "Yone_academie.jpg", "champion": "Yone", "mode": 1 },
-  { "id": 244, "name": "Yone_aube.jpg", "champion": "Yone", "mode": 1 },
-  { "id": 245, "name": "Zed_psycho.jpg", "champion": "Zed", "mode": 1 },
-  { "id": 246, "name": "Zed_seducteur.jpg", "champion": "Zed", "mode": 1 },
-  { "id": 247, "name": "Zed_thanatophore.jpg", "champion": "Zed", "mode": 1 },
-  { "id": 248, "name": "Zoe_hiver.jpg", "champion": "Zoe", "mode": 1 },
-  { "id": 249, "name": "Zyra_assemblee.jpg", "champion": "Zyra", "mode": 1 },
-  { "id": 250, "name": "Zyra_criminel.jpg", "champion": "Zyra", "mode": 1 },
-  { "id": 251, "name": "Zyra_rose.jpg", "champion": "Zyra", "mode": 1 }
+  {
+    "id": 240,
+    "name": "XinZhao_dragon",
+    "champion": "XinZhao",
+    "mode": 1
+  },
+  {
+    "id": 241,
+    "name": "XinZhao_pyro",
+    "champion": "XinZhao",
+    "mode": 1
+  },
+  {
+    "id": 242,
+    "name": "Yasuo_lune",
+    "champion": "Yasuo",
+    "mode": 1
+  },
+  {
+    "id": 243,
+    "name": "Yone_academie",
+    "champion": "Yone",
+    "mode": 1
+  },
+  {
+    "id": 244,
+    "name": "Yone_aube",
+    "champion": "Yone",
+    "mode": 1
+  },
+  {
+    "id": 245,
+    "name": "Zed_psycho",
+    "champion": "Zed",
+    "mode": 1
+  },
+  {
+    "id": 246,
+    "name": "Zed_seducteur",
+    "champion": "Zed",
+    "mode": 1
+  },
+  {
+    "id": 247,
+    "name": "Zed_thanatophore",
+    "champion": "Zed",
+    "mode": 1
+  },
+  {
+    "id": 248,
+    "name": "Zoe_hiver",
+    "champion": "Zoe",
+    "mode": 1
+  },
+  {
+    "id": 249,
+    "name": "Zyra_assemblee",
+    "champion": "Zyra",
+    "mode": 1
+  },
+  {
+    "id": 250,
+    "name": "Zyra_criminel",
+    "champion": "Zyra",
+    "mode": 1
+  },
+  {
+    "id": 251,
+    "name": "Zyra_rose",
+    "champion": "Zyra",
+    "mode": 1
+  }
 ]

@@ -1,11 +1,11 @@
 import React from "react";
-import { Pressable, View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import Text from "./Text";
 import { RFValue } from "react-native-responsive-fontsize";
 
-export default function Button({ text, styleText, styleButton }) {
+export default function Button({ text, styleText, styleButton, onPress }) {
   return (
-    <Pressable>
+    <TouchableOpacity onPress={onPress}>
       <View
         style={{
           display: "flex",
@@ -18,6 +18,6 @@ export default function Button({ text, styleText, styleButton }) {
       >
         <Text style={{ fontSize: RFValue(26), ...styleText }}>{text}</Text>
       </View>
-    </Pressable>
+    </TouchableOpacity>
   );
 }

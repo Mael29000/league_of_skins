@@ -1,55 +1,31 @@
-// read skins.json
-// sort skins by champion occurrence (most to least)
-// console.log the result
+// in order to display static content i need to require the images
+// i need an array of images with the require(path) function
+
+// I already have skins in skins.json
+// I want to add the image property to each skin like this:
+// "image": require("../assets/skins/1.jpg")
+
+// then copy the result to skins.js
+
+// I need to do this because I want to display the skins dynamically
+// and I need to require the images in order to display them
 
 const fs = require("fs");
-const skins = JSON.parse(fs.readFileSync("skins.json", "utf8"));
+const skins = require("./skins.json");
 
-const skinsByChampion = skins.reduce((acc, skin) => {
-  const champion = skin.champion;
-  if (!acc[champion]) {
-    acc[champion] = 0;
-  }
-  acc[champion]++;
-  return acc;
-}, {});
+let jsonString = "[";
 
-const sortedSkins = Object.keys(skinsByChampion).sort((a, b) => {
-  return skinsByChampion[b] - skinsByChampion[a];
-});
+for (let i = 0; i < skins.length; i++) {
+  const skin = skins[i];
+  jsonString += `{
+    "id": ${skin.id},
+    "name": "${skin.name}",
+    "champion": "${skin.champion}",
+    "image": require("../assets/skins/${skin.name}.jpg"),
+    "mode": "${skin.mode}",
+  },`;
+}
 
-// display the result with occurences
-sortedSkins.forEach((champion) => {
-  console.log(`${champion}: ${skinsByChampion[champion]}`);
-});
+jsonString += "]";
 
-// from lower to higher list the number of champions with the same number of skins
-const skinsByOccurence = Object.values(skinsByChampion).reduce((acc, count) => {
-  if (!acc[count]) {
-    acc[count] = 0;
-  }
-  acc[count]++;
-  return acc;
-}, {});
-
-const sortedOccurences = Object.keys(skinsByOccurence).sort((a, b) => {
-  return b - a;
-});
-
-sortedOccurences.forEach((occurence) => {
-  console.log(`${occurence}: ${skinsByOccurence[occurence]}`);
-});
-
-console.log("number of different champions:", sortedSkins.length);
-
-// read the champions.json and find those champions that have no skins
-const champions = JSON.parse(fs.readFileSync("champions.json", "utf8"));
-
-const championsArray = Object.keys(champions);
-
-const championsWithoutSkins = championsArray.filter((champion) => {
-  return !sortedSkins.includes(champion);
-});
-
-console.log("champions without skins:", championsWithoutSkins);
-console.log("number of champions without skins:", championsWithoutSkins.length);
+fs.writeFileSync("./skins.js", `export const skins = ${jsonString}`);

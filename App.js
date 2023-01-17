@@ -1,11 +1,12 @@
-import { StyleSheet, Image, View, SafeAreaView } from "react-native";
 import { useFonts } from "expo-font";
-import Text from "./src/components/Text";
-import { RFValue } from "react-native-responsive-fontsize";
-import Button from "./src/components/Button";
-import Score from "./src/components/Score";
+import MainMenu from "./src/pages/MainMenu";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Game from "./src/pages/Game";
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
+
   // load the font before rendering the app
   const [loaded] = useFonts({
     "Montserrat-Black": require("./assets/fonts/Montserrat-Black.ttf"),
@@ -33,87 +34,16 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Image
-        source={require("./assets/backgrounds/menu.jpg")}
-        style={{ height: "100%", width: "100%", position: "absolute" }}
-      />
-      <View
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.24)",
-          width: "100%",
-          height: "100%",
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
         }}
-      />
-      <SafeAreaView style={{ flex: 1 }}>
-        <View
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            flexDirection: "column",
-            flex: 1,
-          }}
-        >
-          <View style={{ marginTop: RFValue(35) }}>
-            <Text style={styles.title}>LEAGUE</Text>
-            <View
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                marginTop: RFValue(-5),
-              }}
-            >
-              <Text style={styles.titleOf}>OF</Text>
-              <Text style={styles.title}>SKINS</Text>
-            </View>
-          </View>
-          <View>
-            <Button
-              text="RESUME"
-              styleText={{ color: "white" }}
-              styleButton={{
-                backgroundColor: "rgba(0, 0, 0, 0.56);",
-                marginBottom: RFValue(25),
-              }}
-            />
-            <Button
-              text="NEW GAME"
-              styleText={{ color: "white" }}
-              styleButton={{
-                backgroundColor: "rgba(0, 0, 0, 0.56);",
-                marginBottom: RFValue(20),
-              }}
-            />
-            <Score />
-          </View>
-        </View>
-      </SafeAreaView>
-    </View>
+        initialRouteName="Home"
+      >
+        <Stack.Screen name="Home" component={MainMenu} />
+        <Stack.Screen name="Game" component={Game} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "red",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: RFValue(64),
-    color: "white",
-    fontFamily: "Montserrat-Bold",
-  },
-  titleOf: {
-    fontSize: RFValue(32),
-    color: "white",
-    fontFamily: "Montserrat-Bold",
-    marginRight: RFValue(13),
-  },
-});
