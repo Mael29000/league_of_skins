@@ -3,6 +3,8 @@ import MainMenu from "./src/pages/MainMenu";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Game from "./src/pages/Game";
+import { GameProvider } from "./src/context/GameContext";
+import GameOver from "./src/pages/GameOver";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -34,16 +36,19 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-        initialRouteName="Home"
-      >
-        <Stack.Screen name="Home" component={MainMenu} />
-        <Stack.Screen name="Game" component={Game} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <GameProvider>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+          }}
+          initialRouteName="Home"
+        >
+          <Stack.Screen name="Home" component={MainMenu} />
+          <Stack.Screen name="Game" component={Game} />
+          <Stack.Screen name="Game Over" component={GameOver} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </GameProvider>
   );
 }

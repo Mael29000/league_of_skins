@@ -2,8 +2,13 @@ import React from "react";
 import { View, Image } from "react-native";
 import Text from "./Text";
 import { RFValue } from "react-native-responsive-fontsize";
+import { useRanks } from "../hooks/useRanks";
+import { useGameContext } from "../context/GameContext";
 
 export default function Score() {
+  const { bestScore } = useGameContext();
+  const rank = useRanks({ score: bestScore, size: 50 });
+
   return (
     <View
       style={{
@@ -18,15 +23,8 @@ export default function Score() {
       <View
         style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
       >
-        <Image
-          source={require("../../assets/rank/Emblem_Gold.png")}
-          style={{
-            width: RFValue(50),
-            height: RFValue(50),
-            marginRight: RFValue(10),
-          }}
-        />
-        <Text style={{ fontSize: RFValue(36) }}>58</Text>
+        {rank}
+        <Text style={{ fontSize: RFValue(36) }}>{bestScore}</Text>
       </View>
     </View>
   );

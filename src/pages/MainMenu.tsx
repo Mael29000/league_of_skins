@@ -76,13 +76,9 @@ export default function MainMenu({ navigation }) {
 const styles = StyleSheet.create({
   title: {
     fontSize: RFValue(64),
-    color: "white",
-    fontFamily: "Montserrat-Bold",
   },
   titleOf: {
     fontSize: RFValue(32),
-    color: "white",
-    fontFamily: "Montserrat-Bold",
     marginRight: RFValue(13),
   },
 });

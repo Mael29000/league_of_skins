@@ -17,15 +17,23 @@ let jsonString = "[";
 
 for (let i = 0; i < skins.length; i++) {
   const skin = skins[i];
+
   jsonString += `{
-    "id": ${skin.id},
-    "name": "${skin.name}",
-    "champion": "${skin.champion}",
-    "image": require("../assets/skins/${skin.name}.jpg"),
-    "mode": "${skin.mode}",
+    "id" : ${skin.id},
+    "name" : "${skin.name}",
+    "champion" : "${skin.champion}",
+    "image" : require("../assets/skins/${skin.name}.jpg"),
+    "mod" : { "id" : 1, "choices": []}
   },`;
 }
 
+// jsonString += `{
+//  "name" : "${champion.name}",
+//  "image" : require("../assets/champions/${champion.name}.jpg")
+// },`;
+
 jsonString += "]";
 
-fs.writeFileSync("./skins.js", `export const skins = ${jsonString}`);
+console.log(jsonString);
+
+fs.writeFileSync("./skins.js", `export default ${jsonString}`);

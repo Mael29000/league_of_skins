@@ -6,17 +6,33 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 
-export default function GameHeader({ time, setTime }) {
-  // create a timer that will update the time every centisecond
-  // the goes from 20,00 to 0
-  // create a state for the time
+interface GameHeaderProps {
+  toggleRefresh: boolean;
+  scoreMax: number;
+  score: number;
+  lives: number;
+  handleConfirm: () => void;
+  stopTimer: boolean;
+}
+
+export default function GameHeader(props: GameHeaderProps) {
+  const { toggleRefresh, scoreMax, score, lives, handleConfirm, stopTimer } =
+    props;
 
   React.useEffect(() => {
+    setTime(20);
+  }, [toggleRefresh]);
+
+  const [time, setTime] = React.useState<number>(20);
+
+  React.useEffect(() => {
+    if (stopTimer) return;
     const interval = setInterval(() => {
       const newTime = time - 0.01;
 
       if (newTime <= 0) {
         setTime(0);
+        handleConfirm();
         clearInterval(interval);
         return;
       }
@@ -33,27 +49,15 @@ export default function GameHeader({ time, setTime }) {
       }
     }, 10);
     return () => clearInterval(interval);
-  }, [time]);
-
-  // style the time.
-  // gradient from white to red
-  // white when time is 20
-  // red when time is 0
+  }, [time, stopTimer]);
 
   const [timeColor, setTimeColor] = React.useState("white");
 
-  // number of skins found / total number of skins
-  // create a state for the score
+  const nbOfBrokenHearts = lives < 0 ? 3 : 3 - lives;
+  const nbOfFullHearts = lives < 0 ? 0 : lives;
 
   return (
-    <View
-      style={
-        {
-          // marginLeft: RFValue(14),
-          // marginRight: RFValue(14),
-        }
-      }
-    >
+    <View>
       <View
         style={{
           display: "flex",
@@ -82,7 +86,9 @@ export default function GameHeader({ time, setTime }) {
           </Text>
           <MaterialIcons name="pause" size={RFValue(26)} color="white" />
         </View>
-        <Text style={{ fontSize: RFValue(20) }}>1/251</Text>
+        <Text style={{ fontSize: RFValue(20) }}>
+          {score}/{scoreMax}
+        </Text>
       </View>
       <View
         style={{
@@ -92,9 +98,17 @@ export default function GameHeader({ time, setTime }) {
           width: RFValue(85),
         }}
       >
-        <FontAwesome5 name="heart-broken" size={24} color="white" />
-        <FontAwesome5 name="heart-broken" size={24} color="white" />
-        <FontAwesome name="heart" size={24} color="red" />
+        {[...Array(nbOfBrokenHearts)].map((e, i) => (
+          <FontAwesome5
+            key={i}
+            name="heart-broken"
+            size={RFValue(24)}
+            color="white"
+          />
+        ))}
+        {[...Array(nbOfFullHearts)].map((e, i) => (
+          <FontAwesome key={i} name="heart" size={RFValue(24)} color="red" />
+        ))}
       </View>
     </View>
   );
