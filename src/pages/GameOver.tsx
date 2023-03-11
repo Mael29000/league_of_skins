@@ -9,7 +9,7 @@ import { useRanks } from "../hooks/useRanks";
 import Score from "../components/Score";
 
 export default function GameOver({ navigation }) {
-  const { previousScore } = useGameContext();
+  const { previousScore, initGame } = useGameContext();
 
   const rank = useRanks({ score: previousScore, size: 100 });
 
@@ -59,7 +59,7 @@ export default function GameOver({ navigation }) {
         <Button
           text={"NEW GAME"}
           onPress={() => {
-            navigation.navigate("Home");
+            navigation.navigate("Game");
           }}
           styleButton={{
             borderWidth: RFValue(1),

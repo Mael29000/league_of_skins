@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
-import { FontAwesome } from "@expo/vector-icons";
 import { Champion, Result } from "../context/GameContext";
 import Text from "./Text";
 import { Ionicons } from "@expo/vector-icons";
@@ -43,12 +42,6 @@ export default function ChampionsAutocomplete(
     [Result.WIN]: "#33FF00",
     [Result.LOSE]: "red",
     [Result.IN_PROGRESS]: "white",
-  };
-
-  const colorsPlaceholder = {
-    [Result.WIN]: "#33FF00",
-    [Result.LOSE]: "red",
-    [Result.IN_PROGRESS]: "rgba(255, 255, 255, 0.61)",
   };
 
   return (
@@ -105,13 +98,14 @@ export default function ChampionsAutocomplete(
             <TextInput
               placeholder={champion ? "SEARCH" : "SEARCH A CHAMPION"}
               style={{
-                paddingLeft: RFValue(15),
+                paddingLeft: displayList ? RFValue(15) : RFValue(0),
                 fontSize: RFValue(20),
                 color: colors[result],
                 fontFamily: "Montserrat-Bold",
                 height: RFValue(85),
                 width: "100%",
                 flex: 1,
+                textAlign: displayList ? "left" : "center",
               }}
               placeholderTextColor={"rgba(255, 255, 255, 0.61)"}
               onChangeText={handleChangeText}

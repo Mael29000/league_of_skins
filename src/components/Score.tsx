@@ -17,14 +17,21 @@ export default function Score() {
         justifyContent: "space-between",
         alignItems: "center",
         marginBottom: RFValue(10),
+        width: RFValue(300),
       }}
     >
       <Text style={{ fontSize: RFValue(26) }}>Best Score</Text>
       <View
-        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+        }}
       >
         {rank}
-        <Text style={{ fontSize: RFValue(36) }}>{bestScore}</Text>
+        <Text style={{ fontSize: RFValue(36), marginLeft: RFValue(10) }}>
+          {bestScore}
+        </Text>
       </View>
     </View>
   );

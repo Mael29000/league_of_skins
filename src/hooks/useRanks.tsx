@@ -2,6 +2,7 @@ import { Image } from "react-native";
 import { skins } from "../../data/skins";
 import { ranks } from "../../data/ranks";
 import { RFValue } from "react-native-responsive-fontsize";
+import { NUMBER_OF_LIVES } from "../context/GameContext";
 
 interface UseRanksProps {
   score: number;
@@ -16,7 +17,7 @@ export interface IRank {
 export const useRanks = (props: UseRanksProps) => {
   const { score, size } = props;
 
-  const challengerScore = skins.length - 2;
+  const challengerScore = skins.length - (NUMBER_OF_LIVES - 1);
 
   const rankInterval = challengerScore / 8;
 
@@ -33,7 +34,8 @@ export const useRanks = (props: UseRanksProps) => {
   };
 
   const getRank = (score: number) => {
-    return rankMapper[Math.floor(score / rankInterval)];
+    const index = Math.floor(score / rankInterval);
+    return index >= 8 ? "Challenger" : rankMapper[index];
   };
 
   const source = ranks.find((rank) => rank.name === getRank(score)).image;

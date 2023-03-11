@@ -3,8 +3,7 @@ import { View } from "react-native";
 import Text from "./Text";
 import { RFValue } from "react-native-responsive-fontsize";
 import { MaterialIcons } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
-import { FontAwesome } from "@expo/vector-icons";
+import Lives from "./Lives";
 
 interface GameHeaderProps {
   toggleRefresh: boolean;
@@ -53,9 +52,6 @@ export default function GameHeader(props: GameHeaderProps) {
 
   const [timeColor, setTimeColor] = React.useState("white");
 
-  const nbOfBrokenHearts = lives < 0 ? 3 : 3 - lives;
-  const nbOfFullHearts = lives < 0 ? 0 : lives;
-
   return (
     <View>
       <View
@@ -90,26 +86,7 @@ export default function GameHeader(props: GameHeaderProps) {
           {score}/{scoreMax}
         </Text>
       </View>
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          width: RFValue(85),
-        }}
-      >
-        {[...Array(nbOfBrokenHearts)].map((e, i) => (
-          <FontAwesome5
-            key={i}
-            name="heart-broken"
-            size={RFValue(24)}
-            color="white"
-          />
-        ))}
-        {[...Array(nbOfFullHearts)].map((e, i) => (
-          <FontAwesome key={i} name="heart" size={RFValue(24)} color="red" />
-        ))}
-      </View>
+      <Lives lives={lives} />
     </View>
   );
 }

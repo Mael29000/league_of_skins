@@ -44,6 +44,8 @@ export enum Result {
   IN_PROGRESS = "IN_PROGRESS",
 }
 
+export const NUMBER_OF_LIVES = 6;
+
 interface GameContextData {
   isGameStarted: boolean;
   maxScore: number;
@@ -61,7 +63,7 @@ const defaultGameContextData: GameContextData = {
   maxScore: 0,
   bestScore: 0,
   score: 0,
-  lives: 3,
+  lives: 0,
   currentTry: undefined,
   initGame: () => {},
   addTry: (t: Try) => {},
@@ -88,7 +90,7 @@ export const GameProvider = ({ children }) => {
   const score = game ? LeagueOfSkins.game.tries.length : 0;
 
   const lives =
-    3 -
+    NUMBER_OF_LIVES -
     (game
       ? LeagueOfSkins.game.tries.filter((t) => t.result === Result.LOSE).length
       : 0);
@@ -100,16 +102,22 @@ export const GameProvider = ({ children }) => {
   const previousScore = LeagueOfSkins.previousScore;
 
   const addTry = (t: Try) => {
+    const realScore =
+      score - (NUMBER_OF_LIVES - lives) + (t.result === Result.LOSE ? 0 : 1);
     if (t.result === Result.LOSE && lives <= 1) {
       console.log("####### Game Over #######");
-      if (score > bestScore)
+      if (realScore > bestScore)
         setLeagueOfSkins({
           game: undefined,
-          bestScore: score,
-          previousScore: score,
+          bestScore: realScore,
+          previousScore: realScore,
         });
       else
-        setLeagueOfSkins({ game: undefined, bestScore, previousScore: score });
+        setLeagueOfSkins({
+          game: undefined,
+          bestScore,
+          previousScore: realScore,
+        });
       return;
     }
 
@@ -118,6 +126,23 @@ export const GameProvider = ({ children }) => {
     const skinsLeft = skins.filter(
       (s) => !tries.map((t) => t.skin).includes(s)
     );
+
+    if (skinsLeft.length === 0) {
+      console.log("####### You Win #######");
+      if (realScore > bestScore)
+        setLeagueOfSkins({
+          game: undefined,
+          bestScore: realScore,
+          previousScore: realScore,
+        });
+      else
+        setLeagueOfSkins({
+          game: undefined,
+          bestScore,
+          previousScore: realScore,
+        });
+      return;
+    }
 
     const randomSkin = skinsLeft[Math.floor(Math.random() * skinsLeft.length)];
 

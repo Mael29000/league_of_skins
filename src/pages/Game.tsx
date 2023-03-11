@@ -1,23 +1,26 @@
-import React, { useEffect } from "react";
-import { Pressable, SafeAreaView, View, Keyboard, Image } from "react-native";
+import { useState, useEffect, useRef } from "react";
+import { Pressable, SafeAreaView, View, Keyboard } from "react-native";
 import Skin from "../components/Skin";
-import champions from "../../data/champions";
+import { champions } from "../../data/champions";
 import GameHeader from "../components/GameHeader";
 import Button from "../components/Button";
 import { RFValue } from "react-native-responsive-fontsize";
 import {
   Champion,
-  ISkin,
+  NUMBER_OF_LIVES,
   Result,
   Try,
   useGameContext,
 } from "../context/GameContext";
 import ChampionsSelect from "../components/ChampionsSelect";
 import ChampionsAutocomplete from "../components/ChampionsAutocomplete";
-import Text from "../components/Text";
+import FeedBackButton from "../components/FeedBackButton";
+import { useIsFocused } from "@react-navigation/native";
 
 export default function Game({ navigation }) {
   console.log("Game");
+
+  const isFocused = useIsFocused();
 
   const {
     isGameStarted,
@@ -30,54 +33,76 @@ export default function Game({ navigation }) {
   } = useGameContext();
 
   useEffect(() => {
+    // initialize the game when the component is mounted
     if (!isGameStarted) initGame();
   }, []);
 
   useEffect(() => {
+    // add the current try to the game for the first render
     if (!gameTry) setGameTry(currentTry);
   }, [currentTry]);
 
-  const [toggleRefresh, setToggleRefresh] = React.useState(false);
+  // toggle the refresh of the timer
+  const [toggleRefresh, setToggleRefresh] = useState(false);
 
-  const [champion, setChampion] = React.useState(undefined);
+  // champion selected by the user
+  const [champion, setChampion] = useState(undefined);
 
-  const [result, setResult] = React.useState<Result>(Result.IN_PROGRESS);
+  // result of the current try
+  const [result, setResult] = useState<Result>(Result.IN_PROGRESS);
 
-  const [gameTry, setGameTry] = React.useState<Try>(undefined);
+  // current try. It is used to display the skin can be different from the currentTry of the context
+  // because the user can see the result of the try before the next try is displayed
+  const [gameTry, setGameTry] = useState<Try>(undefined);
 
+  // find the champion corresponding to the current try
   const correctChampion: Champion = champions.find(
     (c) => c.name === gameTry?.skin?.champion
   );
 
-  const [stopTimer, setStopTimer] = React.useState(false);
+  // stop the timer
+  const [stopTimer, setStopTimer] = useState<boolean>(false);
+
+  // text of the champion search input
+  const [text, setText] = useState<string>("");
+
+  // display the list of champions
+  const [displayList, setDisplayList] = useState<boolean>(false);
+
+  // the number of lives of the game. Can be different from the lives of the context
+  // because when the game is over the live of the context is reset to NUMBER_OF_LIVES
+  // but we need to keep the number of lives of the game to determine if the user has lost
+  // and if he can continue the game or not.
+  // this number of lives is never displayed to the user
+  const [gameLives, setGameLives] = useState<number>(NUMBER_OF_LIVES);
 
   const handlePress = () => {
     console.log("handlePress", currentTry);
     if (result === Result.IN_PROGRESS) {
+      // hide the keyboard and the list of champions
       Keyboard.dismiss();
       setDisplayList(false);
     } else {
-      if (isGameStarted) {
-        setResult(Result.IN_PROGRESS);
-        setChampion(undefined);
-        setText("");
-        setGameTry(currentTry);
-        setStopTimer(false);
-        setToggleRefresh(!toggleRefresh);
-      } else {
-        navigation.navigate("Game Over");
+      // if the user has lost all his lives, the game is over
+      // if the user has won the game, the game is over
+      // so the isGameStarted is set to false
+      if (!isGameStarted) {
+        // if the user lose and he has only one life left, the game is over
+        if (result === Result.LOSE && gameLives === 0)
+          navigation.navigate("Game Over");
+        // else it mean that the user has won the game
+        else navigation.navigate("Victory");
       }
+      // otherwise the game is not over and the user can continue the game
+      // so we reset the game datas
+      else resetGameDatas();
     }
   };
-
-  const [text, setText] = React.useState("");
 
   const handleChangeText = (text: string) => {
     setText(text.toUpperCase().slice(0, 12));
     setDisplayList(true);
   };
-
-  const [displayList, setDisplayList] = React.useState(false);
 
   const handleDisplayList = () => {
     setDisplayList(!displayList);
@@ -87,9 +112,21 @@ export default function Game({ navigation }) {
     Keyboard.dismiss();
     setDisplayList(false);
     setStopTimer(true);
-    setResult(
-      currentTry?.skin.champion === champion?.name ? Result.WIN : Result.LOSE
-    );
+    const result: Result =
+      currentTry?.skin.champion === champion?.name ? Result.WIN : Result.LOSE;
+    setResult(result);
+    if (result === Result.LOSE) setGameLives(gameLives - 1);
+  };
+
+  const resetGameDatas = () => {
+    // reset the inputs and data to prepare the next try
+    setChampion(undefined);
+    setText("");
+    setStopTimer(false);
+    setToggleRefresh(!toggleRefresh);
+    setResult(Result.IN_PROGRESS);
+    setGameTry(currentTry);
+    setGameLives(lives);
   };
 
   useEffect(() => {
@@ -100,82 +137,14 @@ export default function Game({ navigation }) {
       });
   }, [result]);
 
-  const button = {
-    [Result.WIN]: (
-      <Button
-        text="CORRECT !"
-        styleText={{ color: "white" }}
-        styleButton={{
-          backgroundColor: "rgba(51, 255, 0, 0.61)",
-          fontFamily: "Montserrat-Black",
-          marginBottom: RFValue(20),
-          marginTop: RFValue(20),
-        }}
-        onPress={handlePress}
-      />
-    ),
-    [Result.LOSE]: (
-      <View
-        style={{
-          borderWidth: RFValue(3),
-          borderColor: "#33FF00",
-          borderRadius: RFValue(10),
-          overflow: "hidden",
-          marginBottom: RFValue(20),
-          marginTop: RFValue(20),
-        }}
-      >
-        <View
-          style={{
-            height: RFValue(85),
-            backgroundColor: "rgba(0, 0, 0, 0.56)",
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          }}
-        >
-          <View
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              flex: 1,
-              // backgroundColor: "red",
-            }}
-          >
-            <View
-              style={{
-                height: RFValue(87),
-                width: RFValue(87),
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                overflow: "hidden",
-              }}
-            >
-              <Image
-                source={correctChampion?.image}
-                style={{ height: RFValue(95), width: RFValue(95) }}
-              />
-            </View>
-
-            <Text
-              style={{
-                paddingLeft: RFValue(15),
-                fontSize: RFValue(20),
-                color: "#33FF00",
-                // backgroundColor: "blue",
-              }}
-            >
-              {correctChampion?.name?.toUpperCase()}
-            </Text>
-          </View>
-        </View>
-      </View>
-    ),
-    [Result.IN_PROGRESS]: <View style={{ height: RFValue(52) }} />,
-  };
+  useEffect(() => {
+    if (isFocused) {
+      if (!isGameStarted) {
+        resetGameDatas();
+        initGame();
+      }
+    }
+  }, [isFocused]);
 
   return (
     <Pressable onPress={handlePress}>
@@ -195,12 +164,17 @@ export default function Game({ navigation }) {
               toggleRefresh={toggleRefresh}
               scoreMax={maxScore}
               score={score}
-              lives={isGameStarted ? lives : 0}
+              lives={gameLives}
               handleConfirm={handleConfirm}
               stopTimer={stopTimer}
             />
 
-            <View style={{ display: "flex" }}>
+            <View
+              style={{
+                flex: 1,
+                justifyContent: "flex-end",
+              }}
+            >
               {!champion && result !== Result.IN_PROGRESS ? (
                 <View>
                   <Button
@@ -229,14 +203,19 @@ export default function Game({ navigation }) {
                 />
               )}
 
-              {displayList ? (
+              {displayList && (
                 <ChampionsSelect
                   text={text}
                   setChampion={setChampion}
                   champions={champions}
                 />
-              ) : null}
-              {button[result]}
+              )}
+              <FeedBackButton
+                result={result}
+                handlePress={handlePress}
+                displayList={displayList}
+                correctChampion={correctChampion}
+              />
             </View>
           </View>
         </SafeAreaView>

@@ -6,8 +6,11 @@ import Button from "../components/Button";
 import Score from "../components/Score";
 import Container from "../components/Container";
 import Background from "../components/Background";
+import { useGameContext } from "../context/GameContext";
 
 export default function MainMenu({ navigation }) {
+  const { isGameStarted } = useGameContext();
+
   return (
     <Container>
       <Background source={require("../../assets/backgrounds/menu.jpg")} />
@@ -32,7 +35,13 @@ export default function MainMenu({ navigation }) {
             flex: 1,
           }}
         >
-          <View style={{ marginTop: RFValue(35) }}>
+          <View
+            style={{
+              marginTop: RFValue(35),
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <Text style={styles.title}>LEAGUE</Text>
             <View
               style={{
@@ -47,15 +56,18 @@ export default function MainMenu({ navigation }) {
             </View>
           </View>
           <View>
-            <Button
-              text="RESUME"
-              styleText={{ color: "white" }}
-              styleButton={{
-                backgroundColor: "rgba(0, 0, 0, 0.56);",
-                marginBottom: RFValue(25),
-              }}
-              onPress={() => navigation.navigate("Game")}
-            />
+            {isGameStarted && (
+              <Button
+                text="RESUME"
+                styleText={{ color: "white" }}
+                styleButton={{
+                  backgroundColor: "rgba(0, 0, 0, 0.56);",
+                  marginBottom: RFValue(25),
+                }}
+                onPress={() => navigation.navigate("Game")}
+              />
+            )}
+
             <Button
               text="NEW GAME"
               styleText={{ color: "white" }}

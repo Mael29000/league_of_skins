@@ -1,5 +1,5 @@
 import React from "react";
-import { Pressable, View, Image, TouchableOpacity } from "react-native";
+import { View, Image, TouchableOpacity } from "react-native";
 
 interface ChampionProps {
   champion: any;
@@ -13,8 +13,6 @@ interface ChampionProps {
 
 export default function Champion(props: ChampionProps) {
   const { champion, setChampion } = props;
-
-  console.log("Champion");
 
   return (
     <TouchableOpacity

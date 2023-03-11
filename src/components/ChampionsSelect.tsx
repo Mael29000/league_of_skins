@@ -19,41 +19,33 @@ export default function ChampionsSelect(props: ChampionsSelectProps) {
   };
 
   return (
-    <View style={{ overflow: "hidden" }}>
-      <View
-        style={{
-          overflow: "hidden",
-          borderWidth: RFValue(3),
-          borderColor: "white",
-          // borderBottomWidth: RFValue(0),
-          // borderBottomColor: "transparent",
-          // borderRadius: RFValue(14),
+    <View
+      style={{
+        overflow: "hidden",
+        borderWidth: RFValue(3),
+        borderColor: "white",
 
-          width: "100%",
-          alignSelf: "center",
-          // position: "relative",
-          // top: RFValue(10),
-          marginTop: RFValue(-3),
+        width: "100%",
+        alignSelf: "center",
+        marginTop: RFValue(-3),
+        flex: 1,
+      }}
+    >
+      <FlatList
+        data={champions.filter((champion) => {
+          if (text === "") return true;
+          else return champion.name.toLowerCase().includes(text.toLowerCase());
+        })}
+        keyExtractor={(champion) => champion.name}
+        renderItem={renderChampionList}
+        style={{
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.56)",
         }}
-      >
-        <FlatList
-          data={champions.filter((champion) => {
-            if (text === "") return true;
-            else
-              return champion.name.toLowerCase().includes(text.toLowerCase());
-          })}
-          keyExtractor={(champion) => champion.name}
-          renderItem={renderChampionList}
-          style={{
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.56)",
-            display: "flex",
-          }}
-          numColumns={5}
-          keyboardDismissMode="on-drag"
-          keyboardShouldPersistTaps={"always"}
-        />
-      </View>
+        numColumns={5}
+        keyboardDismissMode="on-drag"
+        keyboardShouldPersistTaps={"always"}
+      />
     </View>
   );
 }

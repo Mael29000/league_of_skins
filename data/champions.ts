@@ -1,4 +1,6 @@
-export default [
+import { Champion } from "../src/context/GameContext";
+
+export const champions: Champion[] = [
   {
     name: "Aatrox",
     image: require("../assets/champions/Aatrox.jpg"),
