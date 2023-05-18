@@ -8,13 +8,14 @@ interface ButtonProps {
   styleText?: any;
   styleButton?: any;
   onPress: () => void;
+  styleContainer?: any;
 }
 
 export default function Button(props: ButtonProps) {
-  const { text, styleText, styleButton, onPress } = props;
+  const { text, styleText, styleButton, onPress, styleContainer } = props;
 
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} style={{ ...styleContainer }}>
       <View
         style={{
           display: "flex",

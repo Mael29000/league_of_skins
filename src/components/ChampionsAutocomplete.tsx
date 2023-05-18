@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  TextInput,
-  Pressable,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { View, TextInput, Image, TouchableOpacity } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 import { Champion, Result } from "../context/GameContext";
 import Text from "./Text";

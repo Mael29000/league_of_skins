@@ -1,14 +1,22 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
-export default function Container({ children }) {
-  return <View style={styles.container}>{children}</View>;
+interface Props {
+  children: React.ReactNode;
+  style?: any;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-    alignItems: "center",
-  },
-});
+export default function Container(props: Props) {
+  const { children, style } = props;
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: "black",
+      alignItems: "center",
+      ...style,
+    },
+  });
+
+  return <View style={styles.container}>{children}</View>;
+}

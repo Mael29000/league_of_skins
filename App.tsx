@@ -6,6 +6,7 @@ import Game from "./src/pages/Game";
 import { GameProvider } from "./src/context/GameContext";
 import GameOver from "./src/pages/GameOver";
 import Victory from "./src/pages/Victory";
+import Disclaimer from "./src/pages/Disclaimer";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -44,7 +45,11 @@ export default function App() {
   return (
     <GameProvider>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={screenOptions} initialRouteName="Home">
+        <Stack.Navigator
+          screenOptions={screenOptions}
+          initialRouteName="Disclaimer"
+        >
+          <Stack.Screen name="Disclaimer" component={Disclaimer} />
           <Stack.Screen name="Home" component={MainMenu} />
           <Stack.Screen name="Game" component={Game} />
           <Stack.Screen name="Game Over" component={GameOver} />

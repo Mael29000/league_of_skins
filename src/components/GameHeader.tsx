@@ -1,8 +1,9 @@
 import React from "react";
-import { View } from "react-native";
+import { Pressable, TouchableOpacity, View } from "react-native";
 import Text from "./Text";
 import { RFValue } from "react-native-responsive-fontsize";
 import { MaterialIcons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 import Lives from "./Lives";
 
 interface GameHeaderProps {
@@ -12,11 +13,21 @@ interface GameHeaderProps {
   lives: number;
   handleConfirm: () => void;
   stopTimer: boolean;
+  pause: boolean;
+  setPause: (pause: boolean) => void;
 }
 
 export default function GameHeader(props: GameHeaderProps) {
-  const { toggleRefresh, scoreMax, score, lives, handleConfirm, stopTimer } =
-    props;
+  const {
+    toggleRefresh,
+    scoreMax,
+    score,
+    lives,
+    handleConfirm,
+    stopTimer,
+    pause,
+    setPause,
+  } = props;
 
   React.useEffect(() => {
     setTime(20);
@@ -53,7 +64,7 @@ export default function GameHeader(props: GameHeaderProps) {
   const [timeColor, setTimeColor] = React.useState("white");
 
   return (
-    <View>
+    <View style={{ zIndex: 10 }}>
       <View
         style={{
           display: "flex",
@@ -69,6 +80,7 @@ export default function GameHeader(props: GameHeaderProps) {
             flexDirection: "row",
             alignItems: "center",
             width: RFValue(85),
+            height: RFValue(30),
             justifyContent: "space-between",
           }}
         >
@@ -76,11 +88,20 @@ export default function GameHeader(props: GameHeaderProps) {
             style={{
               fontSize: RFValue(20),
               color: timeColor,
+              width: RFValue(62),
             }}
           >
             {time}
           </Text>
-          <MaterialIcons name="pause" size={RFValue(26)} color="white" />
+          {pause ? (
+            <TouchableOpacity onPress={() => setPause(!pause)}>
+              <FontAwesome5 name="play" size={RFValue(19)} color="white" />
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity onPress={() => setPause(!pause)}>
+              <MaterialIcons name="pause" size={RFValue(30)} color="white" />
+            </TouchableOpacity>
+          )}
         </View>
         <Text style={{ fontSize: RFValue(20) }}>
           {score}/{scoreMax}
