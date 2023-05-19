@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="League of skins icon" src="https://raw.githubusercontent.com/Mael29000/league_of_skins/main/assets/icon.png" height="100">
+    <img alt="League of skins icon" src="https://raw.githubusercontent.com/Mael29000/league_of_skins/main/assets/rounded_icon.png" height="100">
 </p>
 
 # 🧙‍♂️ League of Skins
