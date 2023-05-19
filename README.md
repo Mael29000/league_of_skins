@@ -1,3 +1,7 @@
+<p align="center">
+    <img alt="League of skins icon" src="https://raw.githubusercontent.com/Mael29000/league_of_skins/main/assets/icon.png" height="100">
+</p>
+
 # 🧙‍♂️ League of Skins
 
 League of Skins is a mobile game that allows users to guess the champion based on the skin. The game is built using React Native and Expo. The data is fetched from the [League of Legends API](https://developer.riotgames.com/).
