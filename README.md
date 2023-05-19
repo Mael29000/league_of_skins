@@ -34,8 +34,8 @@ You can install the app on your device by downloading the Expo app and scanning 
 
 ![Game Screen](https://raw.githubusercontent.com/Mael29000/league_of_skins/main/screenshots/game_1.jpeg)
 
-![Game Screen](https://raw.githubusercontent.com/Mael29000/league_of_skins/main/screenshots/game_2.jpeg)
-
 ![Game Screen](https://raw.githubusercontent.com/Mael29000/league_of_skins/main/screenshots/game_3.png)
+
+![Game Screen](https://raw.githubusercontent.com/Mael29000/league_of_skins/main/screenshots/game_2.jpeg)
 
 ![Game Screen](https://raw.githubusercontent.com/Mael29000/league_of_skins/main/screenshots/yes_no.png)
