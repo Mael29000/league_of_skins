@@ -15,77 +15,88 @@ export default function GameOver({ navigation }) {
 
     return (
         <Container>
-            <SafeAreaView>
-                <Text
-                    style={{
-                        fontSize: RFValue(64),
-                        marginTop: RFValue(25),
-                        textAlign: "center",
-                        fontFamily: "Montserrat-Black",
-                    }}
-                >
-                    GAME
-                </Text>
-                <Text
-                    style={{
-                        fontSize: RFValue(64),
-                        textAlign: "center",
-                        fontFamily: "Montserrat-Black",
-                    }}
-                >
-                    OVER
-                </Text>
+            <SafeAreaView style={{ flex: 1 }}>
                 <View
                     style={{
                         display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        marginTop: RFValue(15),
+                        justifyContent: "space-between",
+                        flexDirection: "column",
+                        flex: 1,
                     }}
                 >
-                    {rank}
-                </View>
-                <Text
-                    style={{
-                        fontSize: RFValue(65),
-                        fontFamily: "Montserrat-Black",
-                        textAlign: "center",
-                        marginBottom: RFValue(20),
-                    }}
-                >
-                    {previousScore}
-                </Text>
+                    <View>
+                        <Text
+                            style={{
+                                fontSize: RFValue(56),
+                                textAlign: "center",
+                                fontFamily: "Montserrat-Black",
+                            }}
+                        >
+                            GAME
+                        </Text>
+                        <Text
+                            style={{
+                                fontSize: RFValue(56),
+                                textAlign: "center",
+                                fontFamily: "Montserrat-Black",
+                            }}
+                        >
+                            OVER
+                        </Text>
+                    </View>
+                    <View
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        {rank}
+                    </View>
+                    <Text
+                        style={{
+                            fontSize: RFValue(56),
+                            fontFamily: "Montserrat-Black",
+                            textAlign: "center",
+                        }}
+                    >
+                        {previousScore}
+                    </Text>
 
-                <Button
-                    text={"NEW GAME"}
-                    onPress={() => {
-                        navigation.navigate("Game");
-                    }}
-                    styleButton={{
-                        borderWidth: RFValue(1),
-                        borderColor: "white",
-                        marginBottom: RFValue(20),
-                    }}
-                    styleText={{
-                        fontFamily: "Montserrat-Black",
-                    }}
-                />
-                <Button
-                    text={"MAIN MENU"}
-                    onPress={() => {
-                        navigation.navigate("Home");
-                    }}
-                    styleButton={{
-                        backgroundColor: "white",
-                        marginBottom: RFValue(20),
-                        width: RFValue(300),
-                    }}
-                    styleText={{
-                        color: "black",
-                        fontFamily: "Montserrat-Black",
-                    }}
-                />
-                <Score />
+                    <View>
+                        <Button
+                            text={"NEW GAME"}
+                            onPress={() => {
+                                navigation.navigate("Game");
+                            }}
+                            styleButton={{
+                                borderWidth: RFValue(1),
+                                borderColor: "white",
+                                marginBottom: RFValue(20),
+                                height: RFValue(72),
+                            }}
+                            styleText={{
+                                fontFamily: "Montserrat-Black",
+                            }}
+                        />
+                        <Button
+                            text={"MAIN MENU"}
+                            onPress={() => {
+                                navigation.navigate("Home");
+                            }}
+                            styleButton={{
+                                backgroundColor: "white",
+                                width: RFValue(300),
+                                height: RFValue(72),
+                            }}
+                            styleText={{
+                                color: "black",
+                                fontFamily: "Montserrat-Black",
+                            }}
+                        />
+                    </View>
+                    <Score />
+                </View>
             </SafeAreaView>
         </Container>
     );
