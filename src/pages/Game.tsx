@@ -35,8 +35,6 @@ export default function Game({ navigation }) {
         addTry,
     } = useGameContext();
 
-    console.log("lives available: ", lives);
-
     useEffect(() => {
         // initialize the game when the component is mounted
         if (!isGameStarted) initGame();
@@ -95,8 +93,6 @@ export default function Game({ navigation }) {
     // this number of lives is never displayed to the user
     const [gameLives, setGameLives] = useState<number>(NUMBER_OF_LIVES);
 
-    console.log("gameLives: ", gameLives);
-
     const [pause, setPause] = useState<boolean>(false);
 
     const handlePress = () => {
@@ -122,8 +118,8 @@ export default function Game({ navigation }) {
         }
     };
 
-    const handleChangeText = (text: string) => {
-        setText(text.toUpperCase().slice(0, 12));
+    const handleChangeText = (newText: string) => {
+        setText(newText.slice(0, 12));
         setDisplayList(true);
     };
 
