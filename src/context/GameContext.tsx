@@ -90,7 +90,7 @@ export const GameProvider = ({ children }) => {
     const [isGameLoaded, setIsGameLoaded] = useState<boolean>(false);
 
     const loadGameContext = () => {
-        if (!isGameLoaded) {
+        if (!isGameLoaded && !LeagueOfSkins.game) {
             loadGame().then((game) => {
                 if (game) {
                     setLeagueOfSkins((prev) => ({
@@ -157,10 +157,19 @@ export const GameProvider = ({ children }) => {
             return;
         }
 
-        const tries = [...LeagueOfSkins.game.tries, t];
+        // to ensure there is no duplicate
+        // we check if the skin is not already in the tries
+
+        const isTryAlreadyExist = game?.tries.find(
+            (try_) => try_.skin.id === t.skin.id
+        );
+
+        const tries = !isTryAlreadyExist
+            ? [...LeagueOfSkins.game.tries, t]
+            : LeagueOfSkins.game.tries;
 
         const skinsLeft = skins.filter(
-            (s) => !tries.map((t) => t.skin).includes(s)
+            (s) => !tries.map((t) => t.skin.id).includes(s.id)
         );
 
         if (skinsLeft.length === 0) {
