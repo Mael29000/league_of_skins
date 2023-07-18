@@ -51,7 +51,6 @@ alt="QR Code" width="400"
 <img
 src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/3a/93/1e/3a931e29-a65b-e7c8-8daf-885063ea8727/bdb0f351-d6d3-4db4-ac83-aab323186b32_Simulator_Screenshot_-_iPhone_14_Pro_Max_-_2023-05-26_at_18.38.39.png/300x0w.webp"
 alt="Game Screen" width="200" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
 <img
 src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/5a/bd/99/5abd99a7-3610-b6c4-f60b-93c9cb8339d7/9ab369d5-e893-4e1b-b405-aabf47e45408_Simulator_Screenshot_-_iPhone_14_Pro_Max_-_2023-05-26_at_18.39.32.png/300x0w.webp"
 alt="Home Screen" width="200" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
