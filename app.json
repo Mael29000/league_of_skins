@@ -2,7 +2,7 @@
     "expo": {
         "name": "League of skins",
         "slug": "league_of_skins",
-        "version": "1.0.3",
+        "version": "1.0.4",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "light",
@@ -25,7 +25,7 @@
                 "backgroundColor": "#000000"
             },
             "package": "com.mael29.league_of_skins",
-            "versionCode": 4
+            "versionCode": 5
         },
         "web": {
             "favicon": "./assets/icon.png"
