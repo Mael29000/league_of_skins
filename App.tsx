@@ -7,7 +7,7 @@ import { GameProvider } from "./src/context/GameContext";
 import GameOver from "./src/pages/GameOver";
 import Victory from "./src/pages/Victory";
 import Disclaimer from "./src/pages/Disclaimer";
-import { View, Dimensions } from "react-native";
+import { View, Dimensions, StatusBar } from "react-native";
 
 export default function App() {
     const Stack = createNativeStackNavigator();
@@ -45,6 +45,7 @@ export default function App() {
 
     return (
         <GameProvider>
+            <StatusBar barStyle="light-content" />
             <View
                 style={{
                     height: Dimensions.get("window").height,
